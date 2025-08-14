@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { @apply bg-gradient-to-b from-pixel-bg via-white to-pixel-bg text-pixel-text; }
+a { @apply cursor-pointer; }
+.container { @apply mx-auto max-w-6xl px-4; }
+.card { @apply p-6 rounded-2xl border bg-gradient-to-b from-white to-slate-50 shadow-sm; }
+.btn { @apply inline-flex items-center gap-2 rounded-2xl px-5 py-3; }
+.btn-primary { @apply btn text-white; background-color: theme(colors.pixel.primary); }
+.btn-outline { @apply btn border; border-color: theme(colors.pixel.primary); color: theme(colors.pixel.primary); }
